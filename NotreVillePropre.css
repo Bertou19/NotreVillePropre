@@ -2,7 +2,8 @@
   font-family:'Chistoso'  ;
   src:url('ChistosoCF-Bold.otf');
 }
-.headerFirstPage{
+
+  .headerFirstPage{
   height : 600px;
   width: auto;
   background-position: center;
