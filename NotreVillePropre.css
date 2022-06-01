@@ -2,15 +2,19 @@
   font-family:'Chistoso'  ;
   src:url('ChistosoCF-Bold.otf');
 }
-
-header{
-height : 400px;
-width: auto;
-background-position: center;
-background-image: url(city.png);
-background-repeat: no-repeat;
+.headerFirstPage{
+  height : 600px;
+  width: auto;
+  background-position: center;
+  background-image: url(city.png);
+  background-repeat: no-repeat;
 }
 
+@media(max-width:376px){
+  .headerFirstPage{
+    height : 200px;
+ }
+}
 .logo{
   height: 90px;
   width: 90px;
@@ -21,17 +25,36 @@ background-repeat: no-repeat;
   font-size: 30px;
 }
 
-.card{
-
-background-color: khaki;
-
+@media(max-width:767px){
+  .nav-item{
+    color: forestgreen;
+}
 }
 
+.cardEvent{
+  background-color: khaki;
+  margin-top: 100px;
+  margin-bottom:30px;
+}
 
-h1{
-font-family: Georgia, 'Times New Roman', Times, serif;
-color: green;
-font-size: 30px;
+@media(max-width:376px){
+.navTitle{
+  position:absolute;
+}
+#navbarNavDropdown{
+  position:fixed;
+  max-height: 150px;
+}
+.cardEvent{
+  margin-top: 100px;
+  position:relative;
+}
+}
+
+h1{ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: green;
+  font-size: 30px;
 }
 
 nav{
@@ -40,20 +63,56 @@ nav{
 
 .title, .message{
   color:darkslategrey;
- font-size: 20px;
+  font-size: 20px;
 }
 
-
-@media (max-width:767px) {
-  .bouton1 .bouton2 {
-    text-align:center;
-    padding-bottom:10px;
-  
-  }
+.card-title{
+  color:darkslategrey;
 }
-.about h2 p{
+
+.buttonAsso{
+  margin-bottom: 30px;
+}
+
+.bottle{
+  margin-top: 30px;
+  margin-left:auto;
+  margin-right: auto;
+  display:block;
+  border-radius: 10%;
+}
+
+@media(max-width:767px){
+  .bottle{
+    max-height: 400px;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+}
+@media(max-width:378px){
+  .bottle{
+    max-height: 300px;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+}
+
+.text-about{
   text-align: center;
-margin-top:20px;
+  margin-top: 30px;
+  margin-right: 150px;
+  margin-left: 150px;
+  color:darkslategrey;
+}
+@media (max-width:767px) {
+  .text-about{
+    margin-right: 80px;
+    margin-left: 80px;
+}
 }
 
 .footer-dark {
